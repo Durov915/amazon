@@ -270,3 +270,60 @@ header {
 .footer-items li a:hover {
   text-decoration: underline;
 }
+
+
+
+/* For small screens (up to 768px) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-logo img {
+    width: 30%;
+    margin-bottom: 252px;
+  }
+
+  .address,
+  .nav-search,
+  .sign-in,
+  .returns,
+  .cart {
+    margin-top: 10px;
+  }
+
+  .select-search {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 0;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+
+  .search-icon {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+  }
+
+  .shop-link {
+    margin-top: 0;
+  }
+}
+
+/* For medium screens (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .shop-link {
+    margin-top: -150px;
+  }
+}
+
+/* For large screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  .shop-link {
+    margin-top: -190px;
+  }
+}
